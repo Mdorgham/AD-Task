@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F69625BF28E892C60006AE9B /* ADVA_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69625BE28E892C60006AE9B /* ADVA_TaskApp.swift */; };
+		F69625C128E892C60006AE9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69625C028E892C60006AE9B /* ContentView.swift */; };
+		F69625C328E892C80006AE9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F69625C228E892C80006AE9B /* Assets.xcassets */; };
+		F69625CD28E89FD50006AE9B /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69625CC28E89FD50006AE9B /* PostsViewModel.swift */; };
+		F69625CF28E8A0060006AE9B /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69625CE28E8A0060006AE9B /* PostModel.swift */; };
+		F69625D228E8AF9E0006AE9B /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69625D128E8AF9E0006AE9B /* PostsView.swift */; };
+		F6C37CEB28E90B0B00F33258 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C37CEA28E90B0B00F33258 /* PostCell.swift */; };
+		F6C37CED28E9154100F33258 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C37CEC28E9154100F33258 /* APIService.swift */; };
+		F6C37CF628E91BC500F33258 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C37CF528E91BC500F33258 /* Loader.swift */; };
+		F6C37CFB28E9234700F33258 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = F6C37CFA28E9234700F33258 /* CachedAsyncImage */; };
+		F6C37CFD28E927FC00F33258 /* ImageZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C37CFC28E927FC00F33258 /* ImageZoom.swift */; };
+		F6C37D0028E9298200F33258 /* ImageViewer in Frameworks */ = {isa = PBXBuildFile; productRef = F6C37CFF28E9298200F33258 /* ImageViewer */; };
+		F6C37D0228E9298200F33258 /* ImageViewerRemote in Frameworks */ = {isa = PBXBuildFile; productRef = F6C37D0128E9298200F33258 /* ImageViewerRemote */; };
+		F6C37D0828E92AE100F33258 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C37D0728E92AE100F33258 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F69625BB28E892C60006AE9B /* ADVA Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ADVA Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F69625BE28E892C60006AE9B /* ADVA_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADVA_TaskApp.swift; sourceTree = "<group>"; };
+		F69625C028E892C60006AE9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F69625C228E892C80006AE9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F69625CC28E89FD50006AE9B /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		F69625CE28E8A0060006AE9B /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		F69625D128E8AF9E0006AE9B /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		F6C37CEA28E90B0B00F33258 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		F6C37CEC28E9154100F33258 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F6C37CF528E91BC500F33258 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		F6C37CFC28E927FC00F33258 /* ImageZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoom.swift; sourceTree = "<group>"; };
+		F6C37D0728E92AE100F33258 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F69625B828E892C60006AE9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C37D0028E9298200F33258 /* ImageViewer in Frameworks */,
+				F6C37CFB28E9234700F33258 /* CachedAsyncImage in Frameworks */,
+				F6C37D0228E9298200F33258 /* ImageViewerRemote in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F69625B228E892C60006AE9B = {
+			isa = PBXGroup;
+			children = (
+				F69625BD28E892C60006AE9B /* ADVA Task */,
+				F69625BC28E892C60006AE9B /* Products */,
+				F6C37CE328E9091A00F33258 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F69625BC28E892C60006AE9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F69625BB28E892C60006AE9B /* ADVA Task.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F69625BD28E892C60006AE9B /* ADVA Task */ = {
+			isa = PBXGroup;
+			children = (
+				F6C37CF828E91D9200F33258 /* APP */,
+				F6C37CF728E91D8B00F33258 /* API */,
+				F6C37CF428E91B9A00F33258 /* Extensions */,
+				F69625D028E8AF740006AE9B /* PostsView */,
+				F6C37D0328E929A000F33258 /* Supporting Files */,
+				F6C37D0928E92AF000F33258 /* Preview Content */,
+			);
+			path = "ADVA Task";
+			sourceTree = "<group>";
+		};
+		F69625D028E8AF740006AE9B /* PostsView */ = {
+			isa = PBXGroup;
+			children = (
+				F69625CC28E89FD50006AE9B /* PostsViewModel.swift */,
+				F69625D128E8AF9E0006AE9B /* PostsView.swift */,
+				F6C37CEA28E90B0B00F33258 /* PostCell.swift */,
+			);
+			path = PostsView;
+			sourceTree = "<group>";
+		};
+		F6C37CE328E9091A00F33258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C37CF428E91B9A00F33258 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6C37CF528E91BC500F33258 /* Loader.swift */,
+				F6C37CFC28E927FC00F33258 /* ImageZoom.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F6C37CF728E91D8B00F33258 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F6C37CEC28E9154100F33258 /* APIService.swift */,
+				F69625CE28E8A0060006AE9B /* PostModel.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F6C37CF828E91D9200F33258 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				F69625BE28E892C60006AE9B /* ADVA_TaskApp.swift */,
+				F69625C028E892C60006AE9B /* ContentView.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		F6C37D0328E929A000F33258 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F69625C228E892C80006AE9B /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C37D0928E92AF000F33258 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F6C37D0728E92AE100F33258 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F69625BA28E892C60006AE9B /* ADVA Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F69625C928E892C80006AE9B /* Build configuration list for PBXNativeTarget "ADVA Task" */;
+			buildPhases = (
+				F69625B728E892C60006AE9B /* Sources */,
+				F69625B828E892C60006AE9B /* Frameworks */,
+				F69625B928E892C60006AE9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ADVA Task";
+			packageProductDependencies = (
+				F6C37CFA28E9234700F33258 /* CachedAsyncImage */,
+				F6C37CFF28E9298200F33258 /* ImageViewer */,
+				F6C37D0128E9298200F33258 /* ImageViewerRemote */,
+			);
+			productName = "ADVA Task";
+			productReference = F69625BB28E892C60006AE9B /* ADVA Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F69625B328E892C60006AE9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F69625BA28E892C60006AE9B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F69625B628E892C60006AE9B /* Build configuration list for PBXProject "ADVA Task" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F69625B228E892C60006AE9B;
+			packageReferences = (
+				F6C37CF928E9234700F33258 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+				F6C37CFE28E9298200F33258 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */,
+			);
+			productRefGroup = F69625BC28E892C60006AE9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F69625BA28E892C60006AE9B /* ADVA Task */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F69625B928E892C60006AE9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C37D0828E92AE100F33258 /* Preview Assets.xcassets in Resources */,
+				F69625C328E892C80006AE9B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F69625B728E892C60006AE9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C37CF628E91BC500F33258 /* Loader.swift in Sources */,
+				F69625CD28E89FD50006AE9B /* PostsViewModel.swift in Sources */,
+				F6C37CED28E9154100F33258 /* APIService.swift in Sources */,
+				F69625C128E892C60006AE9B /* ContentView.swift in Sources */,
+				F69625D228E8AF9E0006AE9B /* PostsView.swift in Sources */,
+				F69625CF28E8A0060006AE9B /* PostModel.swift in Sources */,
+				F69625BF28E892C60006AE9B /* ADVA_TaskApp.swift in Sources */,
+				F6C37CEB28E90B0B00F33258 /* PostCell.swift in Sources */,
+				F6C37CFD28E927FC00F33258 /* ImageZoom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F69625C728E892C80006AE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F69625C828E892C80006AE9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F69625CA28E892C80006AE9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ADVA Task/Preview Content\"";
+				DEVELOPMENT_TEAM = Z436UX6MK6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.TaskSwiftUI.ADVA-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F69625CB28E892C80006AE9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ADVA Task/Preview Content\"";
+				DEVELOPMENT_TEAM = Z436UX6MK6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.TaskSwiftUI.ADVA-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F69625B628E892C60006AE9B /* Build configuration list for PBXProject "ADVA Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69625C728E892C80006AE9B /* Debug */,
+				F69625C828E892C80006AE9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F69625C928E892C80006AE9B /* Build configuration list for PBXNativeTarget "ADVA Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F69625CA28E892C80006AE9B /* Debug */,
+				F69625CB28E892C80006AE9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6C37CF928E9234700F33258 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		F6C37CFE28E9298200F33258 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Jake-Short/swiftui-image-viewer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6C37CFA28E9234700F33258 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6C37CF928E9234700F33258 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+		F6C37CFF28E9298200F33258 /* ImageViewer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6C37CFE28E9298200F33258 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewer;
+		};
+		F6C37D0128E9298200F33258 /* ImageViewerRemote */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6C37CFE28E9298200F33258 /* XCRemoteSwiftPackageReference "swiftui-image-viewer" */;
+			productName = ImageViewerRemote;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F69625B328E892C60006AE9B /* Project object */;
+}
