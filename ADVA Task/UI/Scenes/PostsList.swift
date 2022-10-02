@@ -1,5 +1,5 @@
 //
-//  PostsView.swift
+//  PostsList.swift
 //  ADVA Task
 //
 //  Created by mohamed dorgham on 01/10/2022.
@@ -9,7 +9,7 @@ import SwiftUI
 import Combine
 import ImageViewerRemote
 
-struct PostsView: View {
+struct PostsList: View {
     @ObservedObject private var postsViewModel = PostsViewModel()
     @State var viewPhoto = false
     @State var imgURL = ""
@@ -31,6 +31,7 @@ struct PostsView: View {
                     .onAppear(perform: fetchData)
                     .onTapGesture(perform: onTapLoadView)
             }
+            
             // to show image in new view with zooming
             .overlay(ImageViewerRemote(imageURL: $imgURL, viewerShown: self.$viewPhoto))
             .navigationTitle("Home")
